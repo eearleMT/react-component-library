@@ -1,112 +1,112 @@
 button.mt-button {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    border-radius: 0.35rem;
-    cursor: pointer;
-    text-wrap: nowrap;
-    align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  text-wrap: nowrap;
+  align-items: center;
 
-    img {
-        width: 1.5rem;
-        height: 1.5rem;
-        display: block;
-    }
+  img {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+  }
 
-    &:hover:not(:disabled),
-    &:active:not(:disabled) {
+  &:hover:not(:disabled),
+  &:active:not(:disabled) {
+    transition: all 0.5s ease-in-out;
+    background-color: var(--mt-primary-background-color);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border: 1px solid var(--mt-primary-border-color);
+  }
+
+  &.size-sm {
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+    min-width: 9rem;
+    max-width: 12rem;
+  }
+
+  &.size-md {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    min-width: 10rem;
+    max-width: 13rem;
+  }
+
+  &.size-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    min-width: 11rem;
+    max-width: 14rem;
+  }
+
+  &.variant-filled {
+    &.color-primary {
+      background-color: var(--mt-primary-color);
+      color: var(--mt-primary-background-color);
+      border: solid 1px var(--mt-primary-color);
+
+      &:hover:not(:disabled),
+      &:active:not(:disabled) {
+        background-color: var(--mt-primary-color-hover);
+        border: 1px solid var(--mt-primary-color-hover);
         transition: all 0.5s ease-in-out;
-        background-color: var(--mt-primary-background-color);
+      }
+    }
+
+    &.color-secondary {
+      background-color: var(--tc-primary-color);
+      color: var(--mt-secondary-text-color);
+      border: solid 1px var(--tc-primary-color);
+
+      &:hover:not(:disabled),
+      &:active:not(:disabled) {
+        background-color: var(--tc-primary-color-hover);
+        border: 1px solid var(--tc-primary-color-hover);
+        transition: all 0.5s ease-in-out;
+      }
     }
 
     &:disabled {
-        opacity: 0.5;
-        cursor: not-allowed;
-        border: 1px solid var(--mt-primary-border-color);
+      opacity: 0.5;
+      cursor: default;
+      background-color: var(--mt-disabled-color);
+      border: 1px solid var(--mt-disabled-color);
+      color: var(--mt-secondary-text-color);
+    }
+  }
+
+  &.variant-outline {
+    &.color-primary {
+      border: solid 1px var(--mt-primary-color);
     }
 
-    &.size-sm {
-        padding: 0.3rem 1rem;
-        font-size: 0.8rem;
-        min-width: 9rem;
-        max-width: 12rem;
-    }
-
-    &.size-md {
-        padding: 0.4rem 1rem;
-        font-size: 0.9rem;
-        min-width: 10rem;
-        max-width: 13rem;
-    }
-
-    &.size-lg {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-        min-width: 11rem;
-        max-width: 14rem;
-    }
-
-    &.variant-filled {
-        &.color-primary {
-            background-color: var(--mt-primary-color);
-            color: var(--mt-primary-background-color);
-            border: solid 1px var(--mt-primary-color);
-
-            &:hover:not(:disabled),
-            &:active:not(:disabled) {
-                background-color: var(--mt-primary-color-hover);
-                border: 1px solid var(--mt-primary-color-hover);
-                transition: all 0.5s ease-in-out;
-            }
-        }
-
-        &.color-secondary {
-            background-color: var(--tc-primary-color);
-            color: var(--mt-secondary-text-color);
-            border: solid 1px var(--tc-primary-color);
-
-            &:hover:not(:disabled),
-            &:active:not(:disabled) {
-                background-color: var(--tc-primary-color-hover);
-                border: 1px solid var(--tc-primary-color-hover);
-                transition: all 0.5s ease-in-out;
-            }
-        }
-
-        &:disabled {
-            opacity: 0.5;
-            cursor: default;
-            background-color: var(--mt-disabled-color);
-            border: 1px solid var(--mt-disabled-color);
-            color: var(--mt-secondary-text-color);
-        }
-    }
-
-    &.variant-outline {
-        &.color-primary {
-            border: solid 1px var(--mt-primary-color);
-        }
-
-        &.color-secondary {
-            border: solid 1px var(--tc-primary-color);
-        }
-
-        &:disabled {
-            opacity: 0.5;
-            cursor: default;
-            border: 1px solid var(--mt-disabled-color);
-        }
-    }
-
-    &.variant-delete {
-        border: solid 1px var(--mt-error-color);
+    &.color-secondary {
+      border: solid 1px var(--tc-primary-color);
     }
 
     &:disabled {
-        opacity: 0.5;
-        cursor: default;
-        border: 1px solid var(--mt-disabled-color);
+      opacity: 0.5;
+      cursor: default;
+      border: 1px solid var(--mt-disabled-color);
     }
+  }
+
+  &.variant-delete {
+    border: solid 1px var(--mt-error-color);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+    border: 1px solid var(--mt-disabled-color);
+  }
 }

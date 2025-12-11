@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import "tailwindcss";
+
+* {
+  font-family: "Geologica", sans-serif;
+  font-weight: 200;
+}
+
+:root {
+  --mt-primary-color: #00db9a;
+  --tc-primary-color: #9062da;
+  --mt-primary-color-hover: #a3f2db;
+  --tc-primary-color-hover: #968eb9;
+  --mt-primary-background-color: #2c3037;
+  --mt-secondary-background-color: #353b43;
+
+  --mt-secondary-text-color: #fff;
+  --mt-primary-border-color: #707070;
+
+  --mt-error-color: #ee2d2d;
+  --mt-disabled-color: #707070;
+}
