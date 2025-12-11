@@ -49,6 +49,10 @@ const libraryConfig = {
                 test: /\.scss$/,
                 use: ['style-loader', 'css-loader', 'sass-loader'],
             },
+            {
+                test: /\.svg$/,
+                type: 'asset/resource',
+            },
         ],
     },
 };
@@ -102,6 +106,10 @@ const devConfig = {
             {
                 test: /\.scss$/,
                 use: ['style-loader', 'css-loader', 'sass-loader'],
+            },
+            {
+                test: /\.svg$/,
+                type: 'asset/resource',
             },
         ],
     },

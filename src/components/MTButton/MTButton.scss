@@ -7,6 +7,13 @@ button.mt-button {
     border-radius: 0.35rem;
     cursor: pointer;
     text-wrap: nowrap;
+    align-items: center;
+
+    img {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: block;
+    }
 
     &:hover:not(:disabled),
     &:active:not(:disabled) {

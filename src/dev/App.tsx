@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles.css';
 import { ButtonShowcase } from './showcases/ButtonShowcase';
+import { AvatarShowcase } from './showcases/AvatarShowcase';
 
 export const App: React.FC = () => {
     const [selectedComponent, setSelectedComponent] = useState<string>('');
@@ -18,10 +19,12 @@ export const App: React.FC = () => {
                 >
                     <option value="">-- Choose a component --</option>
                     <option value="button">Button</option>
+                    <option value="avatar">Avatar</option>
                 </select>
             </div>
 
             {selectedComponent === 'button' && <ButtonShowcase />}
+            {selectedComponent === 'avatar' && <AvatarShowcase />}
 
             {!selectedComponent && (
                 <div className="text-center py-20 opacity-60">
