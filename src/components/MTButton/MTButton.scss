@@ -78,8 +78,8 @@ button.mt-button {
     &:disabled {
       opacity: 0.5;
       cursor: default;
-      background-color: var(--mt-disabled-color);
-      border: 1px solid var(--mt-disabled-color);
+      background-color: var(--mt-primary-border-color);
+      border: 1px solid var(--mt-primary-border-color);
       color: var(--mt-secondary-text-color);
     }
   }
@@ -96,7 +96,7 @@ button.mt-button {
     &:disabled {
       opacity: 0.5;
       cursor: default;
-      border: 1px solid var(--mt-disabled-color);
+      border: 1px solid var(--mt-primary-border-color);
     }
   }
 
@@ -107,6 +107,6 @@ button.mt-button {
   &:disabled {
     opacity: 0.5;
     cursor: default;
-    border: 1px solid var(--mt-disabled-color);
+    border: 1px solid var(--mt-primary-border-color);
   }
 }

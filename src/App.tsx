@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ButtonShowcase } from "./showcases/ButtonShowcase";
 import { AvatarShowcase } from "./showcases/AvatarShowcase";
+import { EmptyStateShowcase } from "./showcases/EmptyStateShowcase";
 
 function App() {
   const [selectedComponent, setSelectedComponent] = useState<string>("");
@@ -21,11 +22,13 @@ function App() {
           <option value="">-- Choose a component --</option>
           <option value="button">Button</option>
           <option value="avatar">Avatar</option>
+          <option value="empty-state">Empty State</option>
         </select>
       </div>
 
       {selectedComponent === "button" && <ButtonShowcase />}
       {selectedComponent === "avatar" && <AvatarShowcase />}
+      {selectedComponent === "empty-state" && <EmptyStateShowcase />}
 
       {!selectedComponent && (
         <div className="text-center py-20 opacity-60">
