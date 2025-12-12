@@ -58,7 +58,7 @@ export const MTButton: React.FC<ButtonProps> = ({
   disabled = false,
   type = "button",
 }) => {
-  const className = `mt-button size-${size} variant-${variant} color-${color} disabled-${disabled}`;
+  const className = `mt-button size-${size} variant-${variant} color-${color} disabled-${disabled} type-${type}`;
 
   return (
     <button

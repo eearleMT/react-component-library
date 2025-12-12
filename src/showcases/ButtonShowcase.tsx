@@ -232,5 +232,24 @@ export const ButtonShowcase: React.FC = () => (
         </div>
       </div>
     </section>
+
+    {/* Action Buttons */}
+    <section>
+      <h2 className="mb-6 text-xl font-medium">Actions</h2>
+      <div className="mb-8">
+        <h3 className="mb-4 text-base opacity-80">Action</h3>
+        <div className="flex flex-col gap-4">
+          <MTButton variant="filled" size="sm" type="button">
+            Next
+          </MTButton>
+          <MTButton variant="filled" size="md" type="submit">
+            Submit
+          </MTButton>
+          <MTButton variant="filled" size="lg" type="reset">
+            Cancel
+          </MTButton>
+        </div>
+      </div>
+    </section>
   </div>
 );

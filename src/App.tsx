@@ -2,12 +2,13 @@ import { useState } from "react";
 import { ButtonShowcase } from "./showcases/ButtonShowcase";
 import { AvatarShowcase } from "./showcases/AvatarShowcase";
 import { EmptyStateShowcase } from "./showcases/EmptyStateShowcase";
+import { StepBarShowcase } from "./showcases/StepBarShowcase";
 
 function App() {
   const [selectedComponent, setSelectedComponent] = useState<string>("");
 
   return (
-    <div className="p-8 bg-[var(--mt-secondary-background-color)] min-h-screen text-[#d6d6d6] font-[Geologica,sans-serif]">
+    <div className="p-8 bg-gray-800 min-h-screen text-[#d6d6d6] font-[Geologica,sans-serif]">
       <h1 className="mb-8 text-3xl">React Component Library</h1>
 
       <div className="mb-8">
@@ -23,12 +24,14 @@ function App() {
           <option value="button">Button</option>
           <option value="avatar">Avatar</option>
           <option value="empty-state">Empty State</option>
+          <option value="step-bar">Step Bar</option>
         </select>
       </div>
 
       {selectedComponent === "button" && <ButtonShowcase />}
       {selectedComponent === "avatar" && <AvatarShowcase />}
       {selectedComponent === "empty-state" && <EmptyStateShowcase />}
+      {selectedComponent === "step-bar" && <StepBarShowcase />}
 
       {!selectedComponent && (
         <div className="text-center py-20 opacity-60">
