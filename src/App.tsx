@@ -3,6 +3,7 @@ import { ButtonShowcase } from "./showcases/ButtonShowcase";
 import { AvatarShowcase } from "./showcases/AvatarShowcase";
 import { EmptyStateShowcase } from "./showcases/EmptyStateShowcase";
 import { StepBarShowcase } from "./showcases/StepBarShowcase";
+import { BreadcrumbShowcase } from "./showcases/BreadcrumbShowcase";
 
 function App() {
   const [selectedComponent, setSelectedComponent] = useState<string>("");
@@ -21,15 +22,17 @@ function App() {
           className="bg-[#2c3037] cursor-pointer border border-[#707070] text-[#d6d6d6] rounded-lg px-4 py-2 min-w-[200px] focus:outline-none focus:ring-2 focus:ring-[#00db9a]"
         >
           <option value="">-- Choose a component --</option>
-          <option value="button">Button</option>
-          <option value="avatar">Avatar</option>
-          <option value="empty-state">Empty State</option>
-          <option value="step-bar">Step Bar</option>
+          <option value="avatar">MTAvatar</option>
+          <option value="breadcrumb">MTBreadcrumb</option>
+          <option value="button">MTButton</option>
+          <option value="empty-state">MTEmptyState</option>
+          <option value="step-bar">MTStepBar</option>
         </select>
       </div>
 
-      {selectedComponent === "button" && <ButtonShowcase />}
       {selectedComponent === "avatar" && <AvatarShowcase />}
+      {selectedComponent === "breadcrumb" && <BreadcrumbShowcase />}
+      {selectedComponent === "button" && <ButtonShowcase />}
       {selectedComponent === "empty-state" && <EmptyStateShowcase />}
       {selectedComponent === "step-bar" && <StepBarShowcase />}
 

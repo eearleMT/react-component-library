@@ -15,3 +15,9 @@ export type { EmptyStateProps } from "./components/MTEmptyState/MTEmptyState";
 
 export { MTStepBar } from "./components/MTStepBar/MTStepBar";
 export type { StepBarProps } from "./components/MTStepBar/MTStepBar";
+
+export { MTBreadcrumb } from "./components/MTBreadcrumb/MTBreadcrumb";
+export type {
+  MTBreadcrumbProps,
+  IBreadcrumb,
+} from "./components/MTBreadcrumb/MTBreadcrumb";

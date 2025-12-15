@@ -1,0 +1,19 @@
+.breadcrumbs {
+  display: flex;
+  gap: 0.5rem;
+
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    color: var(--primary-text-color);
+    gap: 0.5rem;
+
+    .clickable {
+      cursor: pointer;
+    }
+  }
+
+  .breadcrumb-label:last-child {
+    color: var(--mt-primary-color);
+  }
+}
