@@ -5,6 +5,7 @@ import { EmptyStateShowcase } from "./showcases/EmptyStateShowcase";
 import { StepBarShowcase } from "./showcases/StepBarShowcase";
 import { BreadcrumbShowcase } from "./showcases/BreadcrumbShowcase";
 import { ImageSelectorShowcase } from "./showcases/ImageSelectorShowcase";
+import { SwitchShowcase } from "./showcases/SwitchShowcase";
 
 function App() {
   const [selectedComponent, setSelectedComponent] = useState<string>("");
@@ -29,6 +30,7 @@ function App() {
           <option value="empty-state">MTEmptyState</option>
           <option value="image-selector">MTImageSelector</option>
           <option value="step-bar">MTStepBar</option>
+          <option value="switch">MTSwitch</option>
         </select>
       </div>
 
@@ -38,6 +40,7 @@ function App() {
       {selectedComponent === "empty-state" && <EmptyStateShowcase />}
       {selectedComponent === "image-selector" && <ImageSelectorShowcase />}
       {selectedComponent === "step-bar" && <StepBarShowcase />}
+      {selectedComponent === "switch" && <SwitchShowcase />}
 
       {!selectedComponent && (
         <div className="text-center py-20 opacity-60">

@@ -24,3 +24,6 @@ export type {
 
 export { MTImageSelector } from "./components/MTImageSelector/MTImageSelector";
 export type { MTImageSelectorProps } from "./components/MTImageSelector/MTImageSelector";
+
+export { MTSwitch } from "./components/MTSwitch/MTSwitch";
+export type { SwitchProps } from "./components/MTSwitch/MTSwitch";
