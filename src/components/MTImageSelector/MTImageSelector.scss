@@ -1,0 +1,61 @@
+#MT-image-selector {
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--mt-primary-color);
+  }
+
+  & > img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  .remove {
+    position: absolute;
+    padding: 5px;
+    cursor: pointer;
+    color: var(--mt-primary-color);
+    background-color: var(--mt-primary-background-color);
+    height: 1.5em;
+    width: 1.5em;
+    text-align: center;
+    margin: auto;
+    top: 5px;
+    right: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &:hover .overlay svg {
+    color: var(--mt-primary-color);
+  }
+
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+
+    span {
+      padding-top: 0.5rem;
+      color: var(--mt-secondary-text-color);
+    }
+  }
+}

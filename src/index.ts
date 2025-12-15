@@ -21,3 +21,6 @@ export type {
   MTBreadcrumbProps,
   IBreadcrumb,
 } from "./components/MTBreadcrumb/MTBreadcrumb";
+
+export { MTImageSelector } from "./components/MTImageSelector/MTImageSelector";
+export type { MTImageSelectorProps } from "./components/MTImageSelector/MTImageSelector";

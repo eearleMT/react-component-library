@@ -56,7 +56,7 @@ export const MTStepBar: React.FC<StepBarProps> = ({
   onStepChange,
 }) => {
   return (
-    <div className="mt-step-bar" style={{ width, fontSize: `${size}rem` }}>
+    <div id="MT-stepbar" style={{ width, fontSize: `${size}rem` }}>
       <div className="steps-wrapper">
         {steps.map((label, index) => {
           const completed = index < currentIndex;

@@ -58,10 +58,11 @@ export const MTButton: React.FC<ButtonProps> = ({
   disabled = false,
   type = "button",
 }) => {
-  const className = `mt-button size-${size} variant-${variant} color-${color} disabled-${disabled} type-${type}`;
+  const className = `size-${size} variant-${variant} color-${color} disabled-${disabled} type-${type}`;
 
   return (
     <button
+      id="MT-button"
       type={type}
       className={className}
       onClick={onClick}

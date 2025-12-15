@@ -14,9 +14,9 @@
   --tc-primary-color-hover: #968eb9;
   --mt-primary-background-color: #2c3037;
   --mt-secondary-background-color: #353b43;
-  --mt-secondary-text-color: #fff;
+  --mt-primary-text-color: #d6d6d6;
+  --mt-secondary-text-color: #b4b4b4;
   --mt-primary-border-color: #707070;
   --mt-button-hover: #30353e;
-
   --mt-error-color: #ee2d2d;
 }

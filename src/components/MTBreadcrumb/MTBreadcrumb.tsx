@@ -12,7 +12,7 @@ export interface MTBreadcrumbProps {
 
 export const MTBreadcrumb: React.FC<MTBreadcrumbProps> = ({ breadcrumbs }) => {
   return (
-    <div className="breadcrumbs">
+    <div id="MT-breadcrumbs">
       {breadcrumbs.map((breadcrumb, index) =>
         index < breadcrumbs.length - 1 ? (
           <div key={breadcrumb.link} className="breadcrumb-item">

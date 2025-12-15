@@ -41,7 +41,7 @@ export const MTEmptyState: React.FC<EmptyStateProps> = ({
   width = "100%",
 }) => {
   return (
-    <div className="mt-empty-state" style={{ height, width }}>
+    <div id="MT-empty-state" style={{ height, width }}>
       <div className="mt-empty-state-icon">
         <EmptyPageIcon />
       </div>

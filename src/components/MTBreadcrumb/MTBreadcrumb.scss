@@ -1,11 +1,11 @@
-.breadcrumbs {
+#MT-breadcrumbs {
   display: flex;
   gap: 0.5rem;
 
   .breadcrumb-item {
     display: flex;
     align-items: center;
-    color: var(--primary-text-color);
+    color: var(--mt-secondary-text-color);
     gap: 0.5rem;
 
     .clickable {

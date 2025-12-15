@@ -4,6 +4,7 @@ import { AvatarShowcase } from "./showcases/AvatarShowcase";
 import { EmptyStateShowcase } from "./showcases/EmptyStateShowcase";
 import { StepBarShowcase } from "./showcases/StepBarShowcase";
 import { BreadcrumbShowcase } from "./showcases/BreadcrumbShowcase";
+import { ImageSelectorShowcase } from "./showcases/ImageSelectorShowcase";
 
 function App() {
   const [selectedComponent, setSelectedComponent] = useState<string>("");
@@ -26,6 +27,7 @@ function App() {
           <option value="breadcrumb">MTBreadcrumb</option>
           <option value="button">MTButton</option>
           <option value="empty-state">MTEmptyState</option>
+          <option value="image-selector">MTImageSelector</option>
           <option value="step-bar">MTStepBar</option>
         </select>
       </div>
@@ -34,6 +36,7 @@ function App() {
       {selectedComponent === "breadcrumb" && <BreadcrumbShowcase />}
       {selectedComponent === "button" && <ButtonShowcase />}
       {selectedComponent === "empty-state" && <EmptyStateShowcase />}
+      {selectedComponent === "image-selector" && <ImageSelectorShowcase />}
       {selectedComponent === "step-bar" && <StepBarShowcase />}
 
       {!selectedComponent && (
