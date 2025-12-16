@@ -36,3 +36,6 @@ export type {
   RadioGroupProps,
   IRadioItem,
 } from "./components/MTRadioGroup/MTRadioGroup";
+
+export { MTCheckbox } from "./components/MTCheckbox/MTCheckbox";
+export type { CheckboxProps } from "./components/MTCheckbox/MTCheckbox";

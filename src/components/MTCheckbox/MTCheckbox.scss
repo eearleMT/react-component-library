@@ -1,0 +1,27 @@
+#MT-checkbox {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: var(--label-position);
+  gap: 0.5rem;
+
+  span {
+    font-size: var(--font-size);
+    color: var(--mt-primary-text-color);
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    accent-color: var(--mt-primary-color);
+    width: var(--checkbox-size);
+    height: var(--checkbox-size);
+    border: 1px solid var(--mt-primary-border-color);
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:checked {
+      transform: scale(1);
+      appearance: checkbox;
+    }
+  }
+}
