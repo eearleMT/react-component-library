@@ -30,3 +30,9 @@ export type { SwitchProps } from "./components/MTSwitch/MTSwitch";
 
 export { MTSpinner } from "./components/MTSpinner/MTSpinner";
 export type { SpinnerProps } from "./components/MTSpinner/MTSpinner";
+
+export { MTRadioGroup } from "./components/MTRadioGroup/MTRadioGroup";
+export type {
+  RadioGroupProps,
+  IRadioItem,
+} from "./components/MTRadioGroup/MTRadioGroup";
