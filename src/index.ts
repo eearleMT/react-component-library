@@ -27,3 +27,6 @@ export type { MTImageSelectorProps } from "./components/MTImageSelector/MTImageS
 
 export { MTSwitch } from "./components/MTSwitch/MTSwitch";
 export type { SwitchProps } from "./components/MTSwitch/MTSwitch";
+
+export { MTSpinner } from "./components/MTSpinner/MTSpinner";
+export type { SpinnerProps } from "./components/MTSpinner/MTSpinner";

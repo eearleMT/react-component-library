@@ -78,7 +78,6 @@ const SelectImageIcon = () => (
 export const MTImageSelector: React.FC<MTImageSelectorProps> = ({
   placeholder,
   tagline,
-  aspectratio,
   maxsize = 25 * 1024 * 1024,
   onImageRemove,
   onImageChange,
@@ -162,7 +161,6 @@ export const MTImageSelector: React.FC<MTImageSelectorProps> = ({
       id="MT-image-selector"
       className={src && !imageError ? "thumbnail custom" : "thumbnail"}
       onClick={openFileBrowser}
-      style={aspectratio ? { aspectRatio: aspectratio } : undefined}
     >
       <input
         id="thumbnail-file"
