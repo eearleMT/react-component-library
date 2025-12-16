@@ -42,3 +42,9 @@ export type { CheckboxProps } from "./components/MTCheckbox/MTCheckbox";
 
 export { MTSelect } from "./components/MTSelect/MTSelect";
 export type { SelectProps, SelectOption } from "./components/MTSelect/MTSelect";
+
+export { MTMultiSelect } from "./components/MTMultiSelect/MTMultiSelect";
+export type {
+  MultiSelectProps,
+  MultiSelectOption,
+} from "./components/MTMultiSelect/MTMultiSelect";

@@ -10,6 +10,7 @@ import { SpinnerShowcase } from "./showcases/SpinnerShowcase";
 import { RadioGroupShowcase } from "./showcases/RadioGroupShowcase";
 import { CheckboxShowcase } from "./showcases/CheckboxShowcase";
 import { SelectShowcase } from "./showcases/SelectShowcase";
+import { MultiSelectShowcase } from "./showcases/MultiSelectShowcase";
 
 function App() {
   const [selectedComponent, setSelectedComponent] = useState<string>("");
@@ -34,6 +35,7 @@ function App() {
           <option value="checkbox">MTCheckbox</option>
           <option value="empty-state">MTEmptyState</option>
           <option value="image-selector">MTImageSelector</option>
+          <option value="multi-select">MTMultiSelect</option>
           <option value="radio-group">MTRadioGroup</option>
           <option value="select">MTSelect</option>
           <option value="step-bar">MTStepBar</option>
@@ -48,6 +50,7 @@ function App() {
       {selectedComponent === "checkbox" && <CheckboxShowcase />}
       {selectedComponent === "empty-state" && <EmptyStateShowcase />}
       {selectedComponent === "image-selector" && <ImageSelectorShowcase />}
+      {selectedComponent === "multi-select" && <MultiSelectShowcase />}
       {selectedComponent === "radio-group" && <RadioGroupShowcase />}
       {selectedComponent === "select" && <SelectShowcase />}
       {selectedComponent === "spinner" && <SpinnerShowcase />}
