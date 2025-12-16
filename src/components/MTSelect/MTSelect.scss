@@ -1,0 +1,141 @@
+#MT-select {
+  display: block;
+  font-family: var(--font-family);
+  height: 100%;
+  position: relative;
+  width: 100%;
+  min-width: 100px;
+  cursor: pointer;
+
+  &.disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+
+  &.expanded {
+    border-radius: 0.25rem;
+
+    & .ul-expanded {
+      opacity: 1;
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+      max-height: 200px;
+      border: solid 1px white;
+      border-top: none;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      background: var(--mt-primary-background-color);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+
+      & .li-expanded {
+        padding: 0.5rem 1rem;
+        color: var(--mt-primary-text-color);
+
+        &:hover,
+        &:focus {
+          color: white;
+          background-color: var(--mt-secondary-background-color);
+        }
+      }
+    }
+
+    img {
+      margin-left: auto;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  & > label.required:after {
+    content: " *";
+    color: var(--mt-error-color);
+  }
+
+  .select-container-wrapper {
+    position: relative;
+  }
+
+  .selected-name-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    min-height: 32px;
+    border: solid 1px var(--mt-primary-border-color);
+    border-radius: 0.25rem;
+
+    .selected-name {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow-wrap: break-word;
+      width: 100%;
+    }
+
+    .mt-select-input {
+      position: absolute;
+      height: 100%;
+      width: 80%;
+      left: 0;
+      top: 0;
+      background: transparent;
+      padding: 0.4rem 1rem;
+      border: none;
+      outline: none;
+      color: var(--mt-primary-text-color);
+    }
+
+    .logo {
+      margin-left: auto;
+    }
+  }
+
+  &.searchable .selected-name-container {
+    justify-content: flex-end;
+  }
+
+  .ul-not-expanded {
+    opacity: 0;
+    display: none;
+    border-top: none;
+  }
+
+  .remove {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+
+  .remove::after {
+    content: "\00d7";
+    font-size: 1.5rem;
+    padding-left: 8px;
+    line-height: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 100%;
+
+  &-track {
+    border-radius: 5px;
+    background: var(--mt-primary-background-color);
+  }
+
+  &-thumb {
+    border-radius: 5px;
+    background-color: var(--mt-primary-border-color);
+  }
+}
